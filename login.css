@@ -97,3 +97,26 @@ border: 2px solid #000000;
     height: 100vh;
   }
 }
+
+@media (max-width:791px) {
+    .input input {
+        width: auto;
+        height: 2.5em;
+        font-size: 20px;
+        margin: auto;
+        margin-top: 30px;
+      
+        color: #000000;
+      }
+    .input button {
+        width: 15em;
+        height: 2.5em;
+        font-size: 20px;
+    }
+    
+}
+@media (max-width:431px) {
+    .input button{
+        width: auto;
+    }
+}
