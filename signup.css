@@ -108,6 +108,20 @@
 
   color: #ffffff;
 }
+.reg {
+  width: 620px;
+  height: 92px;
+  margin: 30px;
+  margin-left: 25%;
+  background: white;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 48px;
+
+  color: black;
+}
 
 .name input,
 .username input {
@@ -127,11 +141,10 @@
 }
 
 @media (max-width: 1269px) {
-
-    .full {
-        display: grid;
-        grid-template-columns: auto;
-      }
+  .full {
+    display: grid;
+    grid-template-columns: auto;
+  }
   .left {
     display: none;
   }
