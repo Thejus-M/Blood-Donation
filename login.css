@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+}
+
+.all {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.all > div {
+  text-align: center;
+
+  font-size: 30px;
+}
+
+.right {
+  height: 100vh;
+  background-color: red;
+  color: white;
+}
+
+.left {
+  height: 97vh;
+  margin-right: 30px;
+  background-color: white;
+}
+
+.lnk {
+  color: red;
+  cursor: pointer;
+}
+
+.rightcon {
+  margin-top: 30vh;
+}
+
+.login {
+  font-size: 35px;
+  margin: 100px;
+}
+.login div {
+  font-size: 0.8em;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.input input {
+  width: 20em;
+  height: 2.5em;
+  margin: 20px;
+  background: #edf2f7;
+  border-radius: 24px;
+  padding-left: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.input button {
+    width: 17em;
+    height: 2.5em;
+font-style: normal;
+font-weight: normal;
+font-size: 42px;
+line-height: 49px;
+margin: 20px;
+}
+
+.butlogin{
+    background: #DC1C13;
+    color: white;
+}
+.reg{
+
+border: 2px solid #000000;
+}
+
+@media (max-width: 1687px) {
+  .all {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media (max-width: 1093px) {
+  .all {
+    grid-template-columns: 1fr;
+  }
+  .right {
+    display: none;
+  }
+  .left {
+    margin-right: 0;
+    height: 100vh;
+  }
+}
