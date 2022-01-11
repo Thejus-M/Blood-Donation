@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@100&display=swap");
+.tick {
+  width: 2.7em;
+  height: 2.7em;
+  margin: 10px;
+}
+.lnk {
+  color: red;
+  cursor: pointer;
+}
+.t {
+  font-size: 19px;
+}
+
+.full {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.full > div {
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 30px;
+}
+
+.right {
+  display: grid;
+  grid-template-rows: repeat(10, 5rem);
+  grid-template-columns: 1fr 1fr;
+  font-size: 30px;
+}
+
+.right > div {
+  margin: 0;
+}
+
+.heading {
+  font-size: 1.5em;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.name {
+  padding-left: 2rem;
+}
+.username,
+.name {
+  text-align: left;
+  font-size: 1em;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.mail {
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.pass {
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+.policy {
+  padding: 20px;
+  grid-row-start: 9;
+  grid-row-end: 11;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.mail,
+.pass {
+  padding-left: 2rem;
+  text-align: left;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.mail input,
+.pass input {
+  border-radius: 12px;
+  width: 90%;
+  height: 2em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.creacc {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.creacc button {
+  width: 620px;
+  height: 92px;
+
+  background: #dc1c13;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 48px;
+
+  color: #ffffff;
+}
+
+.name input,
+.username input {
+  border-radius: 12px;
+  width: 80%;
+  height: 2em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.left {
+  background-color: red;
+}
+
+@media (max-width: 1269px) {
+
+    .full {
+        display: grid;
+        grid-template-columns: auto;
+      }
+  .left {
+    display: none;
+  }
+}
+
+@media (max-width: 903px) {
+  .right {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 855px) {
+  .full > div {
+    font-size: 26px;
+  }
+
+  .name {
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+
+  .username {
+    padding-left: 2rem;
+
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+  .mail {
+    grid-row-start: 7;
+    grid-row-end: 9;
+  }
+  .pass {
+    grid-row-start: 9;
+    grid-row-end: 11;
+  }
+  .policy {
+    grid-row-start: 11;
+    grid-row-end: 13;
+  }
+  .creacc {
+    grid-row-start: 14;
+    grid-row-end: 16;
+  }
+  .name,
+  .username {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .name input,
+  .username input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 625px) {
+  .creacc button {
+    width: 220px;
+    height: 92px;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+}
+
+.pic {
+  float: right;
+  margin: 30px;
+}
+.quote {
+  position: absolute;
+  width: 395px;
+  height: 326px;
+  top: 30%;
+
+  font-family: Kaushan Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 104px;
+
+  color: #ffffff;
+}
